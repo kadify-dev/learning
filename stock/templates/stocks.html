@@ -19,11 +19,10 @@
                     <td>{{ stock.ticker }}</td>
                     <td>{{ stock.name }}</td>
                     <td>{{ stock.get_random_price }}{{ stock.currency.sign }}
-                        <a href="{% url 'stock:detail' stock.pk %}">Купить</a> <!-- ссылка на страницу с формой покупки -->
+                        <a href="{% url 'stock:detail' stock.pk %}">Торговать</a>
                     </td>
                 </tr>
             {% endfor %}
-            </tbody>
-
+        </tbody>
     </table>
 {% endblock %}
